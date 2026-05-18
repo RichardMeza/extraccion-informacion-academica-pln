@@ -32,7 +32,6 @@ def cargar_modelo_spacy():
     return spacy.load("es_core_news_sm")
 
 nlp = cargar_modelo_spacy()
-
 # ---------------------------------------------------------
 # Funciones del proyecto
 # ---------------------------------------------------------
