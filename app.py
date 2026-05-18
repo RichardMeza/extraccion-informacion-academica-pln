@@ -138,12 +138,18 @@ def extraer_metodos(texto):
 
 
 def extraer_seccion(texto, inicio, finales):
-    patron = rf"{inicio}\s*(.*?)(?:{'|'.join(finales)})"
-    resultado = re.search(patron, texto, flags=re.IGNORECASE | re.DOTALL)
+    patron = rf'({inicio})\s*(.*?)(?:{"|".join(finales)})'
+
+    resultado = re.search(
+        patron,
+        texto,
+        flags=re.IGNORECASE | re.DOTALL
+    )
 
     if resultado:
-        return resultado.group(1).strip()
-    return "No encontrado"
+        return resultado.group(2).strip()
+    else:
+        return "No encontrado"
 
 
 def extraer_keywords_tfidf(texto, n=20):
