@@ -124,7 +124,7 @@ def extraer_metodos(texto):
         "redes neuronales", "machine learning", "aprendizaje automático",
         "minería de datos", "topic modeling", "lda",
         "procesamiento de lenguaje natural", "pln",
-        "bert", "tf-idf", "tfidf", "Redes neuronales convoluonales"
+        "bert", "tf-idf", "tfidf", "Redes neuronales convolucionales",
         "redes neuronales recurrentes"
     ]
 
